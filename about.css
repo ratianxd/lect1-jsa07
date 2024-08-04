@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://media.discordapp.net/attachments/1251946864287158334/1254259338298523690/background4.jpg?ex=6680c089&is=667f6f09&hm=267788a132380e914385346a27554e18bcf6221b747b4aa45ece1b9a7d18b4f8&=&format=webp&width=757&height=473);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+#about {
+    width: 70%;
+    text-align: justify;
+    background-color: #b4c8ce;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 20px;
+}
